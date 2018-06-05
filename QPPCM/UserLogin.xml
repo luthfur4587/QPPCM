@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="UserLogin">
+
+	<test name="LoginLogout">
+    	<classes>
+        	<class name="com.UserLogin.LoginLogout" ></class>  
+    	</classes>
+	</test>
+</suite>

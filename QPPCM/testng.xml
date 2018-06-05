@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="QPPCM">
+	<listeners> 
+      <listener class-name="com.utility.ScreenshotUtility"/>
+    </listeners>
+    <suite-files>
+   		<suite-file path="./UserLogin.xml" /> 
+  </suite-files>
+ </suite>

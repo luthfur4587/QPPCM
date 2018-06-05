@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Homepage">
+	<test name="CMSZone101">
+    	<classes>
+        	<class name="com.stta.Homepage.CMSZone101" ></class>  
+    	</classes>
+	</test>
+	
+	<test name="MostRecentContent">
+    	<classes>
+        	<class name="com.stta.Homepage.MostRecentContent" ></class>  
+    	</classes>
+	</test>
+	
+	<test name="ZoneHeader">
+    	<classes>
+        	<class name="com.stta.Homepage.ZoneHeader" ></class>  
+    	</classes>
+	</test>
+	
+	<test name="AccordionStyleNavBar">
+    	<classes>
+        	<class name="com.stta.Homepage.AccordionStyleNavBar" ></class>  
+    	</classes>
+	</test>
+	
+</suite>

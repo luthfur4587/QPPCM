@@ -1,0 +1,11 @@
+2017-11-30 14:37:27,668 - rootLogger - INFO - All Excel Files Initialised successfully.
+2017-11-30 14:37:27,672 - rootLogger - INFO - Param.properties file loaded successfully.
+2017-11-30 14:37:27,673 - rootLogger - INFO - Objects.properties file loaded successfully.
+2017-11-30 14:37:27,673 - rootLogger - INFO - Execution started for UserLoginBase.
+2017-11-30 14:37:27,738 - rootLogger - INFO - All Excel Files Initialised successfully.
+2017-11-30 14:37:27,739 - rootLogger - INFO - Param.properties file loaded successfully.
+2017-11-30 14:37:27,740 - rootLogger - INFO - Objects.properties file loaded successfully.
+2017-11-30 14:37:27,741 - rootLogger - INFO - LoginLogout : Execution started.
+2017-11-30 14:37:30,466 - rootLogger - INFO - Chrome Driver Instance loaded successfully.
+2017-11-30 14:37:56,995 - rootLogger - INFO - LoginLogout : Reporting test data set line 1 as PASS In excel.
+2017-11-30 14:37:58,658 - rootLogger - INFO - LoginLogout : Reporting test case as PASS In excel.
