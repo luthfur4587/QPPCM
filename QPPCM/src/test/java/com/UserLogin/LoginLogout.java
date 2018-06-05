@@ -103,11 +103,11 @@ public class LoginLogout extends UserLoginBase {
 		
 		try {
 			String url;
-//			takeScreenShot();
-//			getElement("UserName_xpath").sendKeys("userID");
-//			getElement("Password_xpath").sendKeys("pass");
-//			getElement("QPPCMLoginButton_xpath").click();
-//			takeScreenShot();
+			takeScreenShot();
+			getElement("UserName_xpath").sendKeys("userID");
+			getElement("Password_xpath").sendKeys("pass");
+			getElement("QPPCMLoginButton_xpath").click();
+			takeScreenShot();
 			
 //			
 //			getElementByXPath("VsHeaderLoginButtonXpath").click();

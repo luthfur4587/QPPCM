@@ -926,7 +926,7 @@ public class SuiteBase {
 		File scrFile = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
 		try {
 //			FileUtils.copyFile(scrFile, new File(System.getProperty("user.dir")+"//screenshots//"+screenshotFile));
-			FileUtils.copyFile(scrFile, new File("C:\\Selenium\\zOneTestReports\\screenshots\\"+screenshotFile));
+			FileUtils.copyFile(scrFile, new File(System.getProperty("user.dir")+"//Reports//screenshots//"+screenshotFile));
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
