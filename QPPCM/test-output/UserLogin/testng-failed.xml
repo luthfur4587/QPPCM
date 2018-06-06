@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [UserLogin]">
+  <listeners>
+    <listener class-name="com.utility.ScreenshotUtility"/>
+  </listeners>
+  <test name="LoginLogout(failed)">
+    <classes>
+      <class name="com.UserLogin.LoginLogout">
+        <methods>
+          <include name="checkSuiteToRun"/>
+          <include name="reporterDataResults"/>
+          <include name="closeBrowser"/>
+          <include name="TestName" invocation-numbers="0"/>
+          <include name="checkCaseToRun"/>
+        </methods>
+      </class> <!-- com.UserLogin.LoginLogout -->
+    </classes>
+  </test> <!-- LoginLogout(failed) -->
+</suite> <!-- Failed suite [UserLogin] -->

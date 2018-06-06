@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
-  <test name="Default test(failed)">
+<suite name="Failed suite [UserLogin]">
+  <listeners>
+    <listener class-name="com.utility.ScreenshotUtility"/>
+  </listeners>
+  <test name="LoginLogout(failed)">
     <classes>
       <class name="com.UserLogin.LoginLogout">
         <methods>
@@ -13,5 +16,5 @@
         </methods>
       </class> <!-- com.UserLogin.LoginLogout -->
     </classes>
-  </test> <!-- Default test(failed) -->
-</suite> <!-- Failed suite [Default suite] -->
+  </test> <!-- LoginLogout(failed) -->
+</suite> <!-- Failed suite [UserLogin] -->

@@ -1,11 +1,11 @@
-2018-06-05 15:25:41,489 - rootLogger - INFO - All Excel Files Initialised successfully.
-2018-06-05 15:25:41,492 - rootLogger - INFO - Param.properties file loaded successfully.
-2018-06-05 15:25:41,492 - rootLogger - INFO - Objects.properties file loaded successfully.
-2018-06-05 15:25:41,493 - rootLogger - INFO - Execution started for UserLoginBase.
-2018-06-05 15:25:41,535 - rootLogger - INFO - All Excel Files Initialised successfully.
-2018-06-05 15:25:41,536 - rootLogger - INFO - Param.properties file loaded successfully.
-2018-06-05 15:25:41,536 - rootLogger - INFO - Objects.properties file loaded successfully.
-2018-06-05 15:25:41,537 - rootLogger - INFO - LoginLogout : Execution started.
-2018-06-05 15:25:45,612 - rootLogger - INFO - Chrome Driver Instance loaded successfully.
-2018-06-05 15:25:52,651 - rootLogger - INFO - LoginLogout : Reporting test data set line 1 as FAIL In excel.
-2018-06-05 15:25:54,721 - rootLogger - INFO - LoginLogout : Reporting test case as FAIL In excel.
+2018-06-05 15:39:48,420 - rootLogger - INFO - All Excel Files Initialised successfully.
+2018-06-05 15:39:48,423 - rootLogger - INFO - Param.properties file loaded successfully.
+2018-06-05 15:39:48,424 - rootLogger - INFO - Objects.properties file loaded successfully.
+2018-06-05 15:39:48,424 - rootLogger - INFO - Execution started for UserLoginBase.
+2018-06-05 15:39:48,460 - rootLogger - INFO - All Excel Files Initialised successfully.
+2018-06-05 15:39:48,461 - rootLogger - INFO - Param.properties file loaded successfully.
+2018-06-05 15:39:48,461 - rootLogger - INFO - Objects.properties file loaded successfully.
+2018-06-05 15:39:48,462 - rootLogger - INFO - LoginLogout : Execution started.
+2018-06-05 15:39:51,379 - rootLogger - INFO - Chrome Driver Instance loaded successfully.
+2018-06-05 15:39:58,488 - rootLogger - INFO - LoginLogout : Reporting test data set line 1 as PASS In excel.
+2018-06-05 15:40:00,132 - rootLogger - INFO - LoginLogout : Reporting test case as PASS In excel.
