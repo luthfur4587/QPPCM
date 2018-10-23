@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="ApproverDocumentActions">
+
+	<test name="ApproverDocumentActions">
+    	<classes>
+        	<class name="com.ApproverDocumentActions.ApproverViewApproveDocument" ></class>  
+    	</classes>
+	</test>
+	<test name="ApproverContents">
+    	<classes>
+        	<class name="com.ApproverDocumentActions.ApproverViewRejectDocument" ></class>  
+    	</classes>
+	</test>
+</suite>

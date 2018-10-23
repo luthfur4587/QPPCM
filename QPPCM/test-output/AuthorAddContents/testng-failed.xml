@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [AuthorAddContents]">
+  <listeners>
+    <listener class-name="com.utility.ScreenshotUtility"/>
+  </listeners>
+  <test name="AuthorSaveDocumentAsDraft(failed)">
+    <classes>
+      <class name="com.AuthorAddContents.AuthorSaveDocumentAsDraft">
+        <methods>
+          <include name="checkCaseToRun"/>
+          <include name="TestName" invocation-numbers="0"/>
+          <include name="reporterDataResults"/>
+          <include name="closeBrowser"/>
+        </methods>
+      </class> <!-- com.AuthorAddContents.AuthorSaveDocumentAsDraft -->
+      <class name="com.AuthorAddContents.AuthorAddWebinarMaterials">
+        <methods>
+          <include name="checkCaseToRun"/>
+        </methods>
+      </class> <!-- com.AuthorAddContents.AuthorAddWebinarMaterials -->
+      <class name="com.AuthorAddContents.AuthorAddLinkContent">
+        <methods>
+          <include name="checkSuiteToRun"/>
+          <include name="checkCaseToRun"/>
+        </methods>
+      </class> <!-- com.AuthorAddContents.AuthorAddLinkContent -->
+      <class name="com.AuthorAddContents.AuthorAddDocument">
+        <methods>
+          <include name="checkCaseToRun"/>
+          <include name="reporterDataResults"/>
+          <include name="closeBrowser"/>
+        </methods>
+      </class> <!-- com.AuthorAddContents.AuthorAddDocument -->
+    </classes>
+  </test> <!-- AuthorSaveDocumentAsDraft(failed) -->
+  <test name="AuthorAddWebinarMaterials(failed)">
+    <classes>
+      <class name="com.AuthorAddContents.AuthorSaveDocumentAsDraft">
+        <methods>
+          <include name="checkCaseToRun"/>
+          <include name="reporterDataResults"/>
+          <include name="closeBrowser"/>
+        </methods>
+      </class> <!-- com.AuthorAddContents.AuthorSaveDocumentAsDraft -->
+      <class name="com.AuthorAddContents.AuthorAddWebinarMaterials">
+        <methods>
+          <include name="checkCaseToRun"/>
+          <include name="TestName"/>
+        </methods>
+      </class> <!-- com.AuthorAddContents.AuthorAddWebinarMaterials -->
+      <class name="com.AuthorAddContents.AuthorAddLinkContent">
+        <methods>
+          <include name="checkSuiteToRun"/>
+          <include name="checkCaseToRun"/>
+        </methods>
+      </class> <!-- com.AuthorAddContents.AuthorAddLinkContent -->
+      <class name="com.AuthorAddContents.AuthorAddDocument">
+        <methods>
+          <include name="checkCaseToRun"/>
+          <include name="reporterDataResults"/>
+          <include name="closeBrowser"/>
+        </methods>
+      </class> <!-- com.AuthorAddContents.AuthorAddDocument -->
+    </classes>
+  </test> <!-- AuthorAddWebinarMaterials(failed) -->
+  <test name="AuthorAddLinkContent(failed)">
+    <classes>
+      <class name="com.AuthorAddContents.AuthorSaveDocumentAsDraft">
+        <methods>
+          <include name="checkCaseToRun"/>
+          <include name="reporterDataResults"/>
+          <include name="closeBrowser"/>
+        </methods>
+      </class> <!-- com.AuthorAddContents.AuthorSaveDocumentAsDraft -->
+      <class name="com.AuthorAddContents.AuthorAddWebinarMaterials">
+        <methods>
+          <include name="checkCaseToRun"/>
+        </methods>
+      </class> <!-- com.AuthorAddContents.AuthorAddWebinarMaterials -->
+      <class name="com.AuthorAddContents.AuthorAddLinkContent">
+        <methods>
+          <include name="TestName"/>
+          <include name="checkSuiteToRun"/>
+          <include name="checkCaseToRun"/>
+        </methods>
+      </class> <!-- com.AuthorAddContents.AuthorAddLinkContent -->
+      <class name="com.AuthorAddContents.AuthorAddDocument">
+        <methods>
+          <include name="checkCaseToRun"/>
+          <include name="reporterDataResults"/>
+          <include name="closeBrowser"/>
+        </methods>
+      </class> <!-- com.AuthorAddContents.AuthorAddDocument -->
+    </classes>
+  </test> <!-- AuthorAddLinkContent(failed) -->
+</suite> <!-- Failed suite [AuthorAddContents] -->

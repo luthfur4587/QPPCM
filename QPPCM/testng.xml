@@ -5,5 +5,12 @@
     </listeners>
     <suite-files>
    		<suite-file path="./UserLogin.xml" /> 
+   		<suite-file path="./AuthorDashboard.xml" />
+   		<suite-file path="./AuthorAddContents.xml" /> 
+   		<suite-file path="./ApproverDashboard.xml" /> 
+   		<suite-file path="./ApproverDocumentActions.xml" />  
+   		<suite-file path="./SiteAdmin.xml" />
+   		<suite-file path="./SendEmail.xml" />
+  <!-- 		<suite-file path="./SendEmail.xml" />  -->
   </suite-files>
  </suite>

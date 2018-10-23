@@ -10,6 +10,7 @@
   <name>QPPCM</name>
   <url>http://maven.apache.org</url>
 
+ 
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
   </properties>
@@ -53,6 +54,11 @@
         	       	<artifactId>selenium-java</artifactId>
 		         <version>3.5.3</version>
    		 </dependency>
+   		 <dependency>
+ 		  	 <groupId>org.seleniumhq.selenium</groupId>
+ 			   <artifactId>selenium-support</artifactId>
+ 			   <version>3.5.3</version>
+		</dependency> 
 		<dependency>
 			<groupId>com.relevantcodes</groupId>
 			<artifactId>extentreports</artifactId>

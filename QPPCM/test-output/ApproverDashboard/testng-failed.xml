@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [ApproverDashboard]">
+  <listeners>
+    <listener class-name="com.utility.ScreenshotUtility"/>
+  </listeners>
+  <test name="ApproverDashboard(failed)">
+    <classes>
+      <class name="com.ApproverDashboard.ApproverHomePage">
+        <methods>
+          <include name="closeBrowser"/>
+          <include name="checkSuiteToRun"/>
+          <include name="checkCaseToRun"/>
+          <include name="TestName" invocation-numbers="0"/>
+          <include name="reporterDataResults"/>
+        </methods>
+      </class> <!-- com.ApproverDashboard.ApproverHomePage -->
+    </classes>
+  </test> <!-- ApproverDashboard(failed) -->
+</suite> <!-- Failed suite [ApproverDashboard] -->

@@ -33,9 +33,9 @@ public class ExtentManager {
 			extent.addSystemInfo("Application Name", "QPPCM").addSystemInfo(
 					"Selenium Version", "3.1.0").addSystemInfo("Organization Name", "<a href='https://qpp.cms.gov'>QPPCM</a>");
 			
-			if(Param.getProperty("zoneURLunderTest").contains("impl")){
-				extent.addSystemInfo("Environment", "<a href='https://qpp.cms.gov'>IMPL</a>");
-			}else{extent.addSystemInfo("Environment", "<a href='https://qpp.cms.gov/'>TEST</a>");}
+			if(Param.getProperty("QPPCMURLunderTest").contains("imp")){
+				extent.addSystemInfo("Environment", "<a href='https://qppcm-imp.cms.gov'>IMPL</a>");
+			}else{extent.addSystemInfo("Environment", "<a href='https://qppcm-imp.cms.gov'>TEST</a>");}
 
 		}
 		return extent;

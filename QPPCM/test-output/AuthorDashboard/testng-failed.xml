@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [AuthorDashboard]">
+  <listeners>
+    <listener class-name="com.utility.ScreenshotUtility"/>
+  </listeners>
+  <test name="AuthorDashboard(failed)">
+    <classes>
+      <class name="com.AuthorDashboard.AuthorHomePage">
+        <methods>
+          <include name="closeBrowser"/>
+          <include name="checkCaseToRun"/>
+          <include name="TestName" invocation-numbers="0"/>
+          <include name="reporterDataResults"/>
+          <include name="checkSuiteToRun"/>
+        </methods>
+      </class> <!-- com.AuthorDashboard.AuthorHomePage -->
+    </classes>
+  </test> <!-- AuthorDashboard(failed) -->
+</suite> <!-- Failed suite [AuthorDashboard] -->

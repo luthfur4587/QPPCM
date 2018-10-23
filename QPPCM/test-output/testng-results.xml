@@ -2,46 +2,72 @@
 <testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="QPPCM" duration-ms="0" started-at="2018-06-05T19:39:36Z" finished-at="2018-06-05T19:39:36Z">
+  <suite name="Default suite" duration-ms="47371" started-at="2018-10-23T21:03:24Z" finished-at="2018-10-23T21:04:11Z">
     <groups>
     </groups>
-  </suite> <!-- QPPCM -->
-  <suite name="UserLogin" duration-ms="12655" started-at="2018-06-05T19:39:23Z" finished-at="2018-06-05T19:39:36Z">
-    <groups>
-    </groups>
-    <test name="LoginLogout" duration-ms="12655" started-at="2018-06-05T19:39:23Z" finished-at="2018-06-05T19:39:36Z">
-      <class name="com.UserLogin.LoginLogout">
-        <test-method status="PASS" signature="checkSuiteToRun()[pri:0, instance:com.UserLogin.LoginLogout@1198b989]" name="checkSuiteToRun" is-config="true" duration-ms="214" started-at="2018-06-05T15:39:23Z" finished-at="2018-06-05T15:39:23Z">
+    <test name="Default test" duration-ms="47371" started-at="2018-10-23T21:03:24Z" finished-at="2018-10-23T21:04:11Z">
+      <class name="com.AuthorAddContents.AuthorSaveDocumentAsDraft">
+        <test-method status="PASS" signature="checkSuiteToRun()[pri:0, instance:com.AuthorAddContents.AuthorSaveDocumentAsDraft@6e75aa0d]" name="checkSuiteToRun" is-config="true" duration-ms="291" started-at="2018-10-23T17:03:23Z" finished-at="2018-10-23T17:03:24Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkSuiteToRun -->
-        <test-method status="PASS" signature="checkCaseToRun()[pri:0, instance:com.UserLogin.LoginLogout@1198b989]" name="checkCaseToRun" is-config="true" duration-ms="9092" started-at="2018-06-05T15:39:23Z" finished-at="2018-06-05T15:39:32Z">
+        <test-method status="PASS" signature="checkCaseToRun()[pri:0, instance:com.AuthorAddContents.AuthorSaveDocumentAsDraft@6e75aa0d]" name="checkCaseToRun" is-config="true" duration-ms="16272" started-at="2018-10-23T17:03:24Z" finished-at="2018-10-23T17:03:40Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkCaseToRun -->
-        <test-method status="PASS" signature="TestName(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.UserLogin.LoginLogout@1198b989]" name="TestName" duration-ms="1511" started-at="2018-06-05T15:39:32Z" data-provider="LoginLogoutData" finished-at="2018-06-05T15:39:34Z">
+        <test-method status="PASS" signature="TestName(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.AuthorAddContents.AuthorSaveDocumentAsDraft@6e75aa0d]" name="TestName" duration-ms="27564" started-at="2018-10-23T17:03:40Z" data-provider="CreateDocument" finished-at="2018-10-23T17:04:08Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[test@test.com]]>
+                <![CDATA[AuthorAutomation]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[hello]]>
+                <![CDATA[Abc123$]]>
               </value>
             </param>
             <param index="2">
               <value>
-                <![CDATA[test123]]>
+                <![CDATA[TestAutomationDocTitleSaveAsDraftAndEdit]]>
               </value>
             </param>
             <param index="3">
               <value>
-                <![CDATA[Email ID and Password did not match]]>
+                <![CDATA[TestAutomationDocDescription- Necessary ye contented newspaper zealously breakfast he prevailed. Melancholy middletons yet understood decisively boy law she. Answer him easily are its barton little. Oh no though mother be things simple itself. Dashwood horrible he strictly on as. Home fine in so am good body this hope. ]]>
               </value>
             </param>
             <param index="4">
+              <value>
+                <![CDATA[PY 2018]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[MIPS]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[Fact Sheets]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[09/21/2018]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[02:00PM]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[C:\\zoneupload\\Add files doc.pdf]]>
+              </value>
+            </param>
+            <param index="10">
               <value>
                 <![CDATA[]]>
               </value>
@@ -50,15 +76,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TestName -->
-        <test-method status="PASS" signature="reporterDataResults()[pri:0, instance:com.UserLogin.LoginLogout@1198b989]" name="reporterDataResults" is-config="true" duration-ms="10" started-at="2018-06-05T15:39:34Z" finished-at="2018-06-05T15:39:34Z">
+        <test-method status="PASS" signature="reporterDataResults()[pri:0, instance:com.AuthorAddContents.AuthorSaveDocumentAsDraft@6e75aa0d]" name="reporterDataResults" is-config="true" duration-ms="15" started-at="2018-10-23T17:04:08Z" finished-at="2018-10-23T17:04:08Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- reporterDataResults -->
-        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:com.UserLogin.LoginLogout@1198b989]" name="closeBrowser" is-config="true" duration-ms="2021" started-at="2018-06-05T15:39:34Z" finished-at="2018-06-05T15:39:36Z">
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:com.AuthorAddContents.AuthorSaveDocumentAsDraft@6e75aa0d]" name="closeBrowser" is-config="true" duration-ms="3438" started-at="2018-10-23T17:04:08Z" finished-at="2018-10-23T17:04:11Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->
-      </class> <!-- com.UserLogin.LoginLogout -->
-    </test> <!-- LoginLogout -->
-  </suite> <!-- UserLogin -->
+      </class> <!-- com.AuthorAddContents.AuthorSaveDocumentAsDraft -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

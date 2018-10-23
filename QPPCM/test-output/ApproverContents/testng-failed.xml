@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [ApproverContents]">
+  <listeners>
+    <listener class-name="com.utility.ScreenshotUtility"/>
+  </listeners>
+  <test name="ApproverContents(failed)">
+    <classes>
+      <class name="com.ApproverContents.ApproveDocumentContent">
+        <methods>
+          <include name="checkSuiteToRun"/>
+          <include name="TestName"/>
+        </methods>
+      </class> <!-- com.ApproverContents.ApproveDocumentContent -->
+    </classes>
+  </test> <!-- ApproverContents(failed) -->
+</suite> <!-- Failed suite [ApproverContents] -->

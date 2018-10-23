@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [ApproverDocumentActions]">
+  <listeners>
+    <listener class-name="com.utility.ScreenshotUtility"/>
+  </listeners>
+  <test name="ApproverContents(failed)">
+    <classes>
+      <class name="com.ApproverDocumentActions.ApproverViewRejectDocument">
+        <methods>
+          <include name="reporterDataResults"/>
+          <include name="closeBrowser"/>
+          <include name="checkSuiteToRun"/>
+          <include name="checkCaseToRun"/>
+          <include name="TestName" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- com.ApproverDocumentActions.ApproverViewRejectDocument -->
+      <class name="com.ApproverDocumentActions.ApproverViewApproveDocument">
+        <methods>
+          <include name="closeBrowser"/>
+          <include name="reporterDataResults"/>
+          <include name="checkCaseToRun"/>
+        </methods>
+      </class> <!-- com.ApproverDocumentActions.ApproverViewApproveDocument -->
+    </classes>
+  </test> <!-- ApproverContents(failed) -->
+</suite> <!-- Failed suite [ApproverDocumentActions] -->

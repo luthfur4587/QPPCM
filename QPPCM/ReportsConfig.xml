@@ -14,13 +14,13 @@
         <protocol>https</protocol>
         
         <!-- title of the document -->
-        <documentTitle>Test Report</documentTitle>
+        <documentTitle>Report</documentTitle>
         
         <!-- report name - displayed at top-nav -->
         <reportName>Automation Report</reportName>
         
         <!-- report headline - displayed at top-nav, after reportHeadline -->
-        <reportHeadline>:- Regression Testing </reportHeadline>
+        <reportHeadline>:- QPPCM </reportHeadline>
         
         <!-- global date format override -->
         <!-- defaults to yyyy-MM-dd -->

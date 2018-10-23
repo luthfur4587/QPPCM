@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="ApproverDashboard">
+
+	<test name="ApproverDashboard">
+    	<classes>
+        	<class name="com.ApproverDashboard.ApproverHomePage" ></class>  
+    	</classes>
+	</test>
+</suite>

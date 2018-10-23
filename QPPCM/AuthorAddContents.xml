@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="AuthorAddContents">
+
+	<test name="AuthorAddDocument">
+    	<classes>
+        	<class name="com.AuthorAddContents.AuthorAddDocument" ></class>  
+    	</classes>
+	</test>
+	<test name="AuthorSaveDocumentAsDraft">
+    	<classes>
+        	<class name="com.AuthorAddContents.AuthorSaveDocumentAsDraft" ></class>  
+    	</classes>
+	</test>
+	<test name="AuthorAddWebinarMaterials">
+    	<classes>
+        	<class name="com.AuthorAddContents.AuthorAddWebinarMaterials" ></class>  
+    	</classes>
+	</test>
+	<test name="AuthorAddLinkContent">
+    	<classes>
+        	<class name="com.AuthorAddContents.AuthorAddLinkContent" ></class>  
+    	</classes>
+	</test>
+	
+</suite>

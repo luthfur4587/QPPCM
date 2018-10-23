@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="SendEmail">
+
+	<test name="SendEmail">
+    	<classes>
+        	<class name="com.mail.SendMail" ></class>  
+    	</classes>
+	</test>
+</suite>

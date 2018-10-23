@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [SiteAdmin]">
+  <listeners>
+    <listener class-name="com.utility.ScreenshotUtility"/>
+  </listeners>
+  <test name="SiteAdmin(failed)">
+    <classes>
+      <class name="com.SiteAdmin.SiteAdminHomePage">
+        <methods>
+          <include name="checkSuiteToRun"/>
+          <include name="closeBrowser"/>
+          <include name="TestName" invocation-numbers="0"/>
+          <include name="reporterDataResults"/>
+          <include name="checkCaseToRun"/>
+        </methods>
+      </class> <!-- com.SiteAdmin.SiteAdminHomePage -->
+    </classes>
+  </test> <!-- SiteAdmin(failed) -->
+</suite> <!-- Failed suite [SiteAdmin] -->

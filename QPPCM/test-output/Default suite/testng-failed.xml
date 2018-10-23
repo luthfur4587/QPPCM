@@ -3,15 +3,15 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="com.UserLogin.LoginLogout">
+      <class name="com.AuthorAddContents.AuthorSaveDocumentAsDraft">
         <methods>
-          <include name="checkSuiteToRun"/>
+          <include name="checkCaseToRun"/>
+          <include name="TestName" invocation-numbers="0"/>
           <include name="reporterDataResults"/>
           <include name="closeBrowser"/>
-          <include name="TestName" invocation-numbers="0"/>
-          <include name="checkCaseToRun"/>
+          <include name="checkSuiteToRun"/>
         </methods>
-      </class> <!-- com.UserLogin.LoginLogout -->
+      </class> <!-- com.AuthorAddContents.AuthorSaveDocumentAsDraft -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -79,7 +79,7 @@ public class LoginLogout extends UserLoginBase {
 
 		//To Initialize browser.
 		loadWebBrowser();
-		driver.get(Param.getProperty("zoneURLunderTest"));
+		driver.get(Param.getProperty("QPPCMURLunderTest"));
 		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 	}
 	
@@ -102,13 +102,11 @@ public class LoginLogout extends UserLoginBase {
 		}
 		
 		try {
-			String url;
 			takeScreenShot();
-			getElement("UserName_xpath").sendKeys("userID");
-			getElement("Password_xpath").sendKeys("pass");
-			getElement("QPPCMLoginButton_xpath").click();
+			doLogin(Param.getProperty("AuthorUserID"), Param.getProperty("AuthorPassword"));
+			wait (5);
 			takeScreenShot();
-			
+			doLoout();
 //			
 //			getElementByXPath("VsHeaderLoginButtonXpath").click();
 //			getElementByXPath("VsUserNameTextBox").sendKeys(username);

@@ -14,6 +14,7 @@ import java.util.Date;
 import java.util.List;
 import java.util.NoSuchElementException;
 import java.util.Properties;
+import java.util.Random;
 import java.util.concurrent.TimeUnit;
 import org.apache.commons.io.FileUtils;
 import org.apache.log4j.Logger;
@@ -53,8 +54,13 @@ import com.utility.Read_XLS;
 
 public class SuiteBase {	
 	public static Read_XLS TestSuiteListExcel=null;
-	public static Read_XLS TestCaseListExcelSERVICES = null;
 	public static Read_XLS TestCaseListExcelUSERLOGIN = null;
+	public static Read_XLS TestCaseListExcelAuthorDashboard = null;
+	public static Read_XLS TestCaseListExcelAuthorAddContents = null;
+	public static Read_XLS TestCaseListExcelApproverDashboard = null;
+	public static Read_XLS TestCaseListExcelApproverContents = null;
+	public static Read_XLS TestCaseListExcelSiteAdmin = null;
+	public static Read_XLS TestCaseListExcelDataMigration = null;
 	public static Logger Add_Log = null;
 	public boolean BrowseralreadyLoaded=false;
 	public static Properties Param = null;
@@ -73,14 +79,26 @@ public class SuiteBase {
 	public void init() throws IOException{
 		//To Initialize logger service.
 		Add_Log = Logger.getLogger("rootLogger");
-		//Please change file's path strings bellow If you have stored them at location other than bellow.
+		//Please change file's path strings bellow If you have stored them at location other than bellow.		
 		//Initializing Test Suite List(TestSuiteList.xls) File Path Using Constructor Of Read_XLS Utility Class.
 		TestSuiteListExcel = new Read_XLS(System.getProperty("user.dir")+"\\src\\test\\java\\com\\ExcelFiles\\TestSuiteList.xls");
-//		//Initializing Test Suite(Services.xls) File Path Using Constructor Of Read_XLS Utility Class.
-//		TestCaseListExcelSERVICES = new Read_XLS(System.getProperty("user.dir")+"\\src\\com\\ExcelFiles\\Services.xlsx");
-//		//Initializing Test Suite(UserLogin.xls) File Path Using Constructor Of Read_XLS Utility Class.
+		//Initializing Test Suite(UserLogin.xls) File Path Using Constructor Of Read_XLS Utility Class.
 		TestCaseListExcelUSERLOGIN = new Read_XLS(System.getProperty("user.dir")+"\\src\\test\\java\\com\\ExcelFiles\\UserLogin.xls");
+		//Initializing Test Suite(AuthorDashboard.xls) File Path Using Constructor Of Read_XLS Utility Class.
+		TestCaseListExcelAuthorDashboard = new Read_XLS(System.getProperty("user.dir")+"\\src\\test\\java\\com\\ExcelFiles\\AuthorDashboard.xls");
+		//Initializing Test Suite(AuthorAddContents.xls) File Path Using Constructor Of Read_XLS Utility Class.
+		TestCaseListExcelAuthorAddContents = new Read_XLS(System.getProperty("user.dir")+"\\src\\test\\java\\com\\ExcelFiles\\AuthorAddContents.xls");
+		//Initializing Test Suite(ApproverDashboard.xls) File Path Using Constructor Of Read_XLS Utility Class.
+		TestCaseListExcelApproverDashboard = new Read_XLS(System.getProperty("user.dir")+"\\src\\test\\java\\com\\ExcelFiles\\ApproverDashboard.xls");
+		//Initializing Test Suite(ApproverDocumentActions.xls) File Path Using Constructor Of Read_XLS Utility Class.
+		TestCaseListExcelApproverContents = new Read_XLS(System.getProperty("user.dir")+"\\src\\test\\java\\com\\ExcelFiles\\ApproverDocumentActions.xls");
+		//Initializing Test Suite(ApproverDashboard.xls) File Path Using Constructor Of Read_XLS Utility Class.
+		TestCaseListExcelSiteAdmin = new Read_XLS(System.getProperty("user.dir")+"\\src\\test\\java\\com\\ExcelFiles\\SiteAdmin.xls");
 
+
+		//Initializing Test Suite(ApplicationDataMigration.xls) File Path Using Constructor Of Read_XLS Utility Class.
+		TestCaseListExcelDataMigration= new Read_XLS(System.getProperty("user.dir")+"\\src\\test\\java\\com\\ExcelFiles\\ApplicationDataMigration.xls");
+		
 		
 		//Below given syntax will Insert log In applog.log file.
 		Add_Log.info("All Excel Files Initialised successfully.");
@@ -128,12 +146,13 @@ public class SuiteBase {
 				Add_Log.info("Firefox Driver Instance loaded successfully.");
 				
 			}else if(Param.getProperty("testBrowser").equalsIgnoreCase("Chrome")){
-//				//To Load Chrome driver Instance.
+				//To Load Chrome driver Instance.
 				System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir")+"//BrowserDrivers//chromedriver.exe");
 				DesiredCapabilities capabilities = DesiredCapabilities.chrome();
 				capabilities.setCapability(CapabilityType.ForSeleniumServer.ENSURING_CLEAN_SESSION, true);
 				capabilities.setCapability (CapabilityType.ACCEPT_SSL_CERTS, true);
 				ChromeOptions opts = new ChromeOptions();
+//				opts.addArguments("headless");
 				opts.addArguments("start-maximized");
 				opts.addArguments("-incognito");
 				opts.addArguments("--disable-popup-blocking");
@@ -573,6 +592,30 @@ public class SuiteBase {
 	    Date date = new SimpleDateFormat("EEE MMM dd HH:mm:ss z yyyy").parse(inputDate);
 	    return new SimpleDateFormat("MM/dd/yyyy HH.mm").format(date);
 	}
+	
+
+
+	  public static String formatDate(String inDate) {
+		SimpleDateFormat inSDF = new SimpleDateFormat("yyyy-mm-dd");
+		SimpleDateFormat outSDF = new SimpleDateFormat("mm/dd/yyyy");
+	    String outDate = "";
+	    if (inDate != null) {
+	        try {
+	            Date date = inSDF.parse(inDate);
+	            outDate = outSDF.format(date);
+	        } catch (ParseException ex){ 
+	        }
+	    }
+	    return outDate;
+	  }
+	  
+
+		public String OriginalCreateDate(String inputDate) throws ParseException{
+			   Date date = new SimpleDateFormat("EEE MMM dd HH:mm:ss z yyyy").parse(inputDate);
+			   return new SimpleDateFormat("MM/dd/yyyy").format(date);
+		}
+
+	
 	// change time format from 10:00:00 AM to 10 AM
 	public String changeTimeFormat(String time){
 		String regex;
@@ -776,11 +819,33 @@ public class SuiteBase {
 		driver.switchTo().defaultContent();
 	}
 	
+
+public static int getRandomInt(int upperRange){
+    Random random = new Random();
+    return random.nextInt(upperRange);
+}
+
+
+public static int getRandomIntIntRange(int min, int max) {
+    Random r = new Random();
+    return r.nextInt((max - min) + 1) + min;
+}
+
+public void fileUpload(String Locator, String Path){
+	try{
+		getElement(Locator).sendKeys(Path);
+	}catch(Exception e){
+		reportFailure(e.getMessage());
+		e.printStackTrace();
+	}
+}
+	
 	/*****************************Main********************************/
 	
 	// finding element and returning it
 	public WebElement getElement(String locatorKey){
 		reportInfo("Locating: " + locatorKey);
+		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 		WebElement e=null;
 		try{
 		if(locatorKey.endsWith("_id"))
@@ -791,6 +856,8 @@ public class SuiteBase {
 			e = driver.findElement(By.xpath(Object.getProperty(locatorKey)));
 		else if(locatorKey.endsWith("_text"))
 			e = driver.findElement(By.linkText(Object.getProperty(locatorKey)));
+		else if(locatorKey.endsWith("_css"))
+			e = driver.findElement(By.cssSelector(Object.getProperty(locatorKey)));
 		else{
 			reportFailure("Locator not correct - " + locatorKey);
 		}
@@ -848,13 +915,54 @@ public class SuiteBase {
 	}
 	
 	public void doLogin(String userID, String Password){
-		click("zoneAcceptButton_xpath");
-		type("zoneUserIDTextbox_xpath",userID);
-		click("zoneNextButton_xpath");
-		type("zonePwdTextbox_xpath",Password);
-		click("zoneLoginButton_xpath");
-		test.log(LogStatus.INFO, "Login Successfully");
-
+		type("UserName_xpath",userID);
+		type("Password_xpath",Password);
+		click("LoginBlockCheckBox_xpath");
+		wait(3);
+//		click("TermsAndCondX_xpath");
+		click("QPPCMLoginButton_xpath");
+		test.log(LogStatus.PASS, "Login Successfully");
+	}
+	
+	public void doLoout(){
+		if (driver.getCurrentUrl().contains("localhost")){
+			driver.get(Param.getProperty("LogoutLink_local"));
+			reportPass("Local Logout Successfully");
+		}else if(driver.getCurrentUrl().contains("imp")){
+			driver.get(Param.getProperty("LogoutLink_imp"));
+			reportPass("IMPL Logout Successfully");
+		}else {
+			reportFailure("Logout function failed");
+		}
+	}
+	
+	
+	public void elementHighlight(WebElement element) throws InterruptedException {
+		JavascriptExecutor js = (JavascriptExecutor) driver;
+		js.executeScript("arguments[0].scrollIntoView();", element);
+		js.executeScript("arguments[0].setAttribute('style', 'background: yellow; border: 2px solid red;');", element);
+		//Remove elementHighlight  
+//		Thread.sleep(400); 
+//		js.executeScript("arguments[0].setAttribute('style', 'background: white; border: 0px solid white;');", element);
+		
+	}
+	
+	public void HighlightLinks() throws InterruptedException{
+	        List<WebElement> links = driver.findElements(By.tagName("a"));
+	          for (WebElement myElement : links){
+	         String link = myElement.getText(); 
+	 		 reportPass("Verifying Link: "+link);
+	        	  if (!(link.equals(""))){
+	                  elementHighlight(myElement);
+	        	  }
+	          } 
+	    }
+	
+	public void QuickCheck(String locatorKey) throws InterruptedException{
+		WebElement element= getElement(locatorKey);
+		elementHighlight(element);
+		takeScreenShot();
+		test.log(LogStatus.PASS, locatorKey+": Pass CheckPoint");
 	}
 	/*****************************Reporting********************************/
 	

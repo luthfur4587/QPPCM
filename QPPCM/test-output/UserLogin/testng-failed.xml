@@ -9,9 +9,7 @@
       <class name="com.UserLogin.LoginLogout">
         <methods>
           <include name="checkSuiteToRun"/>
-          <include name="reporterDataResults"/>
-          <include name="closeBrowser"/>
-          <include name="TestName" invocation-numbers="0"/>
+          <include name="TestName"/>
           <include name="checkCaseToRun"/>
         </methods>
       </class> <!-- com.UserLogin.LoginLogout -->

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [SendEmail]">
+  <test name="SendEmail(failed)">
+    <classes>
+      <class name="com.mail.SendMail">
+        <methods>
+          <include name="main"/>
+        </methods>
+      </class> <!-- com.mail.SendMail -->
+    </classes>
+  </test> <!-- SendEmail(failed) -->
+</suite> <!-- Failed suite [SendEmail] -->

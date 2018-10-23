@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="AuthorDashboard">
+
+	<test name="AuthorDashboard">
+    	<classes>
+        	<class name="com.AuthorDashboard.AuthorHomePage" ></class>  
+    	</classes>
+	</test>
+</suite>

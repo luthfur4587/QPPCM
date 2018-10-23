@@ -1,20 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [UserLogin]">
-  <listeners>
-    <listener class-name="com.utility.ScreenshotUtility"/>
-  </listeners>
-  <test name="LoginLogout(failed)">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
+  <test name="Default test(failed)">
     <classes>
-      <class name="com.UserLogin.LoginLogout">
+      <class name="com.AuthorAddContents.AuthorSaveDocumentAsDraft">
         <methods>
-          <include name="checkSuiteToRun"/>
+          <include name="checkCaseToRun"/>
+          <include name="TestName" invocation-numbers="0"/>
           <include name="reporterDataResults"/>
           <include name="closeBrowser"/>
-          <include name="TestName" invocation-numbers="0"/>
-          <include name="checkCaseToRun"/>
+          <include name="checkSuiteToRun"/>
         </methods>
-      </class> <!-- com.UserLogin.LoginLogout -->
+      </class> <!-- com.AuthorAddContents.AuthorSaveDocumentAsDraft -->
     </classes>
-  </test> <!-- LoginLogout(failed) -->
-</suite> <!-- Failed suite [UserLogin] -->
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->

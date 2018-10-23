@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="SiteAdmin">
+
+	<test name="SiteAdmin">
+    	<classes>
+        	<class name="com.SiteAdmin.SiteAdminHomePage" ></class>  
+    	</classes>
+	</test>
+</suite>
